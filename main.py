@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import smtplib
+import html5lib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from time import sleep
