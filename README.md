@@ -1,10 +1,10 @@
 # Monitorador de Preços Aliexpress
 ## O que este projeto faz?
-Este projeto faz o monitoramento constante, de 15 em 15 minutos, do preço de um ou mais produtos do Aliexpress. Caso o preço de algum dos produtos cadastrados tenha diminuído, é enviado um Email HTML, que faz uso recursos de formatação e marcação semântica em email que não estão disponíveis com texto simples. O template do email é estilizado com uso do framework Bootstrap, através da ferramente Bootstrap Email (https://github.com/bootstrap-email/bootstrap-email). O monitoramento dos preços é feito sempre, até que todos os produtos tenham seu alerta de preço enviado (após o preço abaixar) ou até que o usuário encerre o processo.
+Este projeto faz o monitoramento constante, de 15 em 15 minutos, do preço de um ou mais produtos do Aliexpress. Caso o preço de algum dos produtos cadastrados tenha diminuído, é enviado um Email HTML, que faz uso recursos de formatação e marcação semântica em email que não estão disponíveis com texto simples. O template do email é estilizado com uso do framework Bootstrap, através da ferramenta Bootstrap Email (https://github.com/bootstrap-email/bootstrap-email). O monitoramento dos preços é feito sempre, até que todos os produtos tenham seu alerta de preço enviado (após o preço abaixar) ou até que o usuário encerre o processo.
 ## Como o projeto funciona?
 Este projeto foi desenvolvido em Python, que dentre outras bibliotecas, possui a biblioteca Beautiful Soup (https://github.com/wention/BeautifulSoup4) que é utilizada para extrair dados de arquivos HTML e XML. Ele fornece formas idiomáticas de navegar, pesquisar e modificar a árvore de análise. Para envio de Email HTML é utilizada a bibliteca smtplib (https://docs.python.org/3/library/smtplib.html) e as subclasses MIMEMultiparte e MIMEText (https://docs.python.org/3/library/email.mime.html).
 ## Quais as configurações necessárias para o projeto funcionar?
-Antes de executar o projeto, configure as variáveis do arquivo credenciais.py, sendo elas:
+Antes de executar o projeto, configure as variáveis do arquivo [credenciais.py](https://github.com/MicSG-dev/trabalho-web-scraping/blob/main/credenciais.py), sendo elas:
 ```
 HOST = "*******" # Nome do servidor do seu plano de hospedagem
 PORT = 587 # A porta SSL ou TTL
@@ -13,7 +13,7 @@ PASSWORD = "*************" # a senha do e-mail remetente (MY_ADDRESS)
 ```    
 > Nota: A variável `PORT` requere a porta de seu servidor SMTP, que normalmente é 587 para protocolo TTL e 465 para protocolo SSL.
 
-Também altere a variável `email_relatorio` que se encontra na linha 122 do arquivo main.py. Esata variável deve ter o Email para qual deseja que o alerta Email HTML seja enviado.
+Também altere a variável `email_relatorio` que se encontra na [linha 122 do arquivo main.py](https://github.com/MicSG-dev/trabalho-web-scraping/blob/main/main.py#L122). Esta variável deve ter o Email para qual deseja que o alerta Email HTML seja enviado.
 ```
 email_relatorio = "*************************"
 ```
