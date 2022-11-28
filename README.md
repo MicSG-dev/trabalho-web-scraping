@@ -19,7 +19,7 @@ email_relatorio = "*************************"
 ```
 
 ### Obtendo o codigo_produto no Aliexpress
-1. Acesse o site do produto no Aliexpress;
+1. Acesse o site do produto desejado para monitoração de preço no Aliexpress;
 2. No URL do produto, extraia o código do produto, onde este está localizado entre a barras item e a extensão da página (.html). Exemplo: https://pt.aliexpress.com/item/1005002611857804.html neste exemplo, o código do produto seria 1005002611857804;
 
 ### Cadastrando os produtos no monitorador
