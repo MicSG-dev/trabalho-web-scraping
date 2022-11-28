@@ -48,6 +48,6 @@ Email aberto no Gmail:
 
 ![image](https://user-images.githubusercontent.com/71986598/204199367-f14881c8-4cc3-489b-aaf4-36a15f8b9639.png)
 
-Console aberto no Pycham:
+Console aberto no Pycharm:
 
 ![image](https://user-images.githubusercontent.com/71986598/204198948-792cb731-258c-4d73-bcaa-e2299fe4e963.png)
